@@ -1,0 +1,137 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: #6c6b6b
+}
+
+a{
+  text-decoration: none;
+}
+
+
+header, nav, h2,.main-visual, .main-visual-content,footer{
+  font-family: "Arial"、"Helvetica"、"sans-serif";
+  }
+
+  header {
+    width: 100%; /* 横幅100% */
+    height: 100px;
+    margin: 0 auto;
+    background-color:darkgreen;
+    text-align: center;
+  }
+
+header .heading { /* headerタグ内のheadingクラスにのみ反映される */
+  font-size: 40px;
+  padding-top:10px;
+  }
+
+  header .heading a {
+    color: #fff;
+  }
+
+
+.nav-list {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: #fff;
+}
+
+.main-visual{
+  width: 100%; /* 横幅いっぱい */
+  height: 900px; /* 高さ300px */
+  background-color:#ecfcdf;
+}
+
+.introduction-heading{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.introduction-contents{
+display: flex;
+justify-items: center;
+padding: 10 40px;
+}
+
+.main-img {
+  width: 30%;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.main-picture{
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.main-introduction{
+  background-color: #fff;
+  width: 70%;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 40px;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.introduction-label {
+  font-weight: bold;
+  width: 100px;
+  padding-left: 10px;
+}
+
+.introduction-text{
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+.social{
+  padding-left: 100px;
+}
+
+footer{
+  width: 100%; /* 横幅100% */
+  height: 100px;
+  background-color:darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.footer-text{
+ color:#fff;
+ font-size: 20px;
+ margin: 0 20px;
+}
+
+@media screen and (max-width:768px) {
+  .introduction-contents {
+  display: block;
+  }
+  .main-img{
+    width: 100%;
+  }
+  .main-introduction{
+    width: 100%;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+  }
+  }
